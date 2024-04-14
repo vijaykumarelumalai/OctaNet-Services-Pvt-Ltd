@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Courses</title>
+    <style>
+        /* Additional custom styling */
+        .header-scrolled {
+            background-color: #038a5d; /* Green color when scrolled */
+        }
+
+        /* Your existing CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEieXvcZ5S0LZdN_hzByQpZh9Oic87Rk-bBL2dCM-4Rw&s");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        header {
+            color: #010d0e; /* Dark Grey */
+            padding: 0; /* Updated padding */
+            text-align: center;
+            position: fixed; /* Ensure the header remains fixed */
+            width: 100%; /* Take full width */
+            top: 0; /* Stick to the top */
+            z-index: 1000; /* Ensure it's above other content */
+        }
+
+        nav {
+            background-color: #00d0ff; /* Blue */
+            color: hsl(10, 100%, 97%); /* White */
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 10px;
+            margin: 0; /* Remove default margin */
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 50px;
+        }
+
+        .main-content {
+            padding: 15px;
+            background-color: hsl(0, 0%, %); /* Light Brown */
+            color: #d8ca04; /* White */
+            margin-top: 1px; /* Adjust for fixed header */
+        }
+
+        footer {
+            background-color: #000000; /* Black */
+            color: #f8eeee; /* White */
+            padding: 1px;
+            text-align: center;
+            position: relative; /* Ensure it's not overlapped by other content */
+            margin-top: 10px; /* Add some space */
+        }
+
+        /* New styles */
+        .fullscreen-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            object-fit: cover;
+        }
+
+        #webdev-heading {
+            text-transform: uppercase;
+        }
+
+        /* Colorful content */
+        #about,
+        #courses,
+        #testimonials,
+        #faqs,
+        #resources,
+        #contact {
+            color: #ffe9e9; /* Dark grey */
+        }
+
+        /* Columns layout */
+        .columns {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 10px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+            padding: 20px;
+            border-radius: 10px;
+            color: black; /* Set text color to black */
+        }
+
+        /* Individual section styling */
+        .section {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Full screen image -->
+    <img class="fullscreen-image" src="https://images.pexels.com/photos/50594/sea-bay-waterfront-beach-50594.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+    <!-- Header -->
+    <header class="header">
+        <!-- Header content -->
+        <div class="bg-blue-500 p-4">
+            <div class="container mx-auto">
+                <h1 id="webdev-heading" class="text-white text-center text-3xl">LANDING PAGE</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto flex justify-center">
+            <ul class="flex space-x-6">
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#faqs">FAQs</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+      <!-- Add your existing content here -->
+    <div class="scroll-trigger"></div>
+    <div class="container mx-auto my-8 px-4">
+        <!-- Sections content here -->
+    </div>
+    <section id="about" class="main-content">
+        <div class="container mx-auto">
+    </section>
+    <section id="about">
+        <h2><u>About Us</u></h2>
+        <p>Welcome to Web Development Courses! We are dedicated to providing high-quality learning resources for individuals interested in starting their journey in web development. Whether you're a complete beginner or looking to refresh your skills, our courses are designed to cater to your needs.</p>
+        
+        <h3>What Sets Us Apart?</h3>
+        <p>At Web Development Courses, we believe in hands-on learning and practical exercises. Our courses are structured to ensure that you not only understand the theory behind HTML and CSS but also gain practical experience by building real-world projects.</p>
+        
+        <h3>Our Instructors</h3>
+        <p>Our team of experienced instructors comprises industry professionals with years of experience in web development. They are passionate about teaching and are committed to helping you succeed on your learning journey.</p>
+        
+        <h3>What You'll Learn</h3>
+        <p>In our courses, you'll learn the foundational concepts of HTML and CSS, including:</p>
+        <ul>
+            <li>Creating and structuring web pages with HTML elements</li>
+            <li>Styling web pages using CSS properties and selectors</li>
+            <li>Building responsive and visually appealing layouts</li>
+            <li>Implementing best practices in web development</li>
+        </ul>
+        
+        <h3>Join Us Today!</h3>
+        <p>Ready to dive into the world of web development? Enroll in our courses today and take the first step towards mastering HTML and CSS. Whether you're looking to pursue a career in web development or simply expand your skill set, we're here to support you every step of the way.</p>
+    </section>
+    <section id="courses" class="main-content">
+        <div class="container mx-auto">
+            <h2><u>Our Courses</u></h2>
+            <div class="columns">
+                <div class="section">
+                    <h3>HTML Essentials</h3>
+                    <p>Learn the fundamentals of HTML (Hypertext Markup Language), the standard markup language for creating web pages. In this course, you'll gain a solid understanding of HTML syntax, structure, and best practices. By the end of the course, you'll be able to create well-structured and semantically meaningful web pages.</p>
+                </div>
+                <div class="section">
+                    <h3>CSS Fundamentals</h3>
+                    <p>Master the basics of CSS (Cascading Style Sheets), the language used for styling web pages. This course covers CSS selectors, properties, layout techniques, and responsive design principles. You'll learn how to apply styles to HTML elements and create visually stunning web pages that adapt to different screen sizes.</p>
+                </div>
+                <div class="section">
+                    <h3>Responsive Web Design</h3>
+                    <p>Explore the principles of responsive web design and learn how to create websites that look great on all devices, from desktop computers to smartphones and tablets. This course covers media queries, flexible layouts, and other techniques for building responsive and mobile-friendly websites.</p>
+                </div>
+                <div class="section">
+                    <h3>Project-Based Learning</h3>
+                    <p>Put your skills into practice with our project-based learning courses. Work on real-world projects and apply your knowledge of HTML and CSS to build interactive and engaging websites. Our instructors will provide guidance and feedback as you work through each project, helping you to refine your skills and build a professional portfolio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials">
+        <h2><u>Testimonials</u></h2>
+        <div class="testimonial">
+            <p>"I enrolled in the HTML Essentials course, and I couldn't be happier with my decision. The course content is well-structured, and the explanations are easy to follow. I've learned so much in a short amount of time, and I'm already applying my new skills to personal projects. Highly recommend!"</p>
+            <p class="author">- Emily R.</p>
+        </div>
+        <div class="testimonial">
+            <p>"The CSS Fundamentals course exceeded my expectations. The instructors are knowledgeable and engaging, and the hands-on exercises helped solidify my understanding of CSS concepts. I now feel confident styling web pages and creating responsive layouts. Thank you for a great learning experience!"</p>
+            <p class="author">- David S.</p>
+        </div>
+        <div class="testimonial">
+            <p>"I recently completed the Responsive Web Design course, and I'm thrilled with the results. The course materials are comprehensive, and the practical examples are invaluable. I've been able to apply what I learned to my professional projects, and my clients are impressed with the responsive designs I've created. Thank you for such an informative course!"</p>
+            <p class="author">- Sarah L.</p>
+        </div>
+    </section>
+    
+    <section id="faqs">
+        <h2><u>FAQs</u></h2>
+        
+        <h3>1. Who are these courses for?</h3>
+        <p>Our courses are designed for anyone interested in learning web development, regardless of their prior experience. Whether you're a complete beginner or have some familiarity with HTML and CSS, our courses are structured to accommodate learners of all levels.</p>
+        
+        <h3>2. Do I need any prior coding experience?</h3>
+        <p>No prior coding experience is required to enroll in our beginner-friendly courses. We start from the basics and gradually progress to more advanced topics, ensuring that everyone can follow along and understand the material.</p>
+        
+        <h3>3. How long are the courses?</h3>
+        <p>The duration of each course varies depending on the content and pace of learning. Our courses typically range from a few weeks to a couple of months, with new content released regularly. However, you can learn at your own pace and access the course materials at any time.</p>
+        
+        <h3>4. Are the courses self-paced?</h3>
+        <p>Yes, our courses are self-paced, allowing you to study and complete assignments at your own convenience. You'll have access to the course materials for an extended period, allowing you to revisit lessons and review concepts as needed.</p>
+        
+        <h3>5. Do I receive a certificate upon completion?</h3>
+        <p>Yes, upon successful completion of a course, you will receive a certificate of completion to showcase your achievement. Our certificates are recognized by industry professionals and can be a valuable addition to your resume or portfolio.</p>
+        
+        <h3>6. Can I interact with instructors and fellow students?</h3>
+        <p>Absolutely! Our courses include discussion forums and live Q&A sessions where you can interact with instructors and fellow students. This collaborative learning environment allows you to ask questions, share insights, and connect with others in the web development community.</p>
+        
+        <h3>7. What happens after I enroll?</h3>
+        <p>After enrolling in a course, you'll gain access to the course materials, including video lectures, readings, and assignments. You'll also receive guidance on how to navigate the course and participate in discussions. Our support team is available to assist you throughout your learning journey.</p>
+    </section>
+    
+    <section id="resources">
+        <h2><u>Resources</u></h2>
+        
+        <h3>1. Recommended Books</h3>
+        <p>Enhance your learning with these recommended books on HTML and CSS:</p>
+        <ul>
+            <li>"HTML and CSS: Design and Build Websites" by Jon Duckett</li>
+            <li>"Learning Web Design: A Beginner's Guide to HTML, CSS, JavaScript, and Web Graphics" by Jennifer Niederst Robbins</li>
+            <li>"CSS Secrets: Better Solutions to Everyday Web Design Problems" by Lea Verou</li>
+        </ul>
+        
+        <h3>2. Online Tutorials</h3>
+        <p>Explore online tutorials and resources to supplement your learning:</p>
+        <ul>
+            <li><a href="https://www.w3schools.com/html/">W3Schools HTML Tutorial</a></li>
+            <li><a href="https://www.w3schools.com/css/">W3Schools CSS Tutorial</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web">MDN Web Docs</a></li>
+        </ul>
+        
+        <h3>3. Code Editors</h3>
+        <p>Use these popular code editors to practice coding and build your projects:</p>
+        <ul>
+            <li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+            <li><a href="https://atom.io/">Atom</a></li>
+            <li><a href="https://www.sublimetext.com/">Sublime Text</a></li>
+        </ul>
+        
+        <h3>4. Web Development Communities</h3>
+        <p>Connect with other web developers and join online communities for support and networking:</p>
+        <ul>
+            <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
+            <li><a href="https://dev.to/">DEV Community</a></li>
+            <li><a href="https://www.reddit.com/r/webdev/">r/webdev subreddit</a></li>
+        </ul>
+        
+        <h3>5. Additional Courses</h3>
+        <p>Explore additional courses and learning paths to further expand your skills:</p>
+        <ul>
+            <li><a href="https://www.codecademy.com/">Codecademy</a></li>
+            <li><a href="https://www.udemy.com/">Udemy</a></li>
+            <li><a href="https://www.coursera.org/">Coursera</a></li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2><u>Contact Us</u></h2> 
+        <p>If you have any questions, feedback, or inquiries, we're here to help! Feel free to reach out to us through any of the following channels:</p>
+        
+        <h3>Email</h3>
+        <p><a href="mailto:vijaykumarelumalai123@gmail.com">vijaykumarelumalai123@gmail.com</a></p>
+        
+        <h3>Phone</h3>
+        <p>+91 7603917058</p>
+        
+        <h3>Social Media</h3>
+        <p>Connect with us on social media for updates, announcements, and community discussions:</p>
+        <ul>
+            <li><a href="https://www.facebook.com/webdevelopmentcourses">Facebook</a></li>
+            <li><a href="https://twitter.com/webcourses">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/company/web-development-courses">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/webdevcourses">Instagram</a></li>
+        </ul>
+        
+        <h3>Visit Us</h3>
+        <p>If you prefer to speak with us in person, you can visit our office at the following address:</p>
+        <p>Web Development Courses</p>
+        <p>123 Main Road Street</p>
+        <p>vellore, TAmil Nadu 632513</p>
+        <p>Country</p>
+        
+        <p>We look forward to hearing from you!</p>
+        
+        <h3 class="text-xl font-semibold mb-2">Send us a Message</h3>
+        <form action="mailto:info@webdevelopmentcourses.com" method="post" enctype="text/plain" class="mb-6">
+            <label for="email" class="block mb-2">Your Email:</label>
+            <input type="email" id="email" name="email" required class="w-full px-4 py-2 mb-4 border border-gray-300 rounded-md">
+    
+            <label for="phone" class="block mb-2">Your Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required class="w-full px-4 py-2 mb-4 border border-gray-300 rounded-md">
+    
+            <label for="message" class="block mb-2">Message:</label>
+            <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 mb-4 border border-gray-300 rounded-md"></textarea>
+    
+            <input type="submit" value="Send" class="px-6 py-3 bg-blue-600 text-white rounded-md cursor-pointer">
+        </form>
+    </section>
+    </section>
+    <a href="#" class="fixed bottom-4 right-4 bg-blue-600 text-white py-2 px-4 rounded-full text-sm">Back to Top</a>
+    <!-- Rest of the sections -->
+    <!-- Your existing sections here -->
+
+
+    <!-- Rest of the sections -->
+    <!-- Your existing sections here -->
+
+    <footer class="bg-gray-900 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Web Development Courses. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Script to display current time -->
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('.header');
+            const scrollTrigger = document.querySelector('.scroll-trigger');
+            const triggerHeight = scrollTrigger.getBoundingClientRect().top;
+
+            if (triggerHeight <= 0) {
+                header.classList.add('header-scrolled');
+            } else {
+                header.classList.remove('header-scrolled');
+            }
+        });
+
+        function showTime() {
+            document.getElementById('currentTime').innerHTML = new Date().toUTCString();
+        }
+        showTime();
+        setInterval(function () {
+            showTime();
+        }, 1000);
+    </script>
+</body>
+</html>
